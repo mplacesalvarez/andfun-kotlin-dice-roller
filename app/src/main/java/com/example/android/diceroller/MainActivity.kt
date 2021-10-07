@@ -23,7 +23,7 @@ import androidx.appcompat.app.AppCompatActivity
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
-
+    var num=0
     lateinit var diceImage: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,16 +39,21 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun rollDice() {
-        val randomInt = Random().nextInt(6) + 1
-        val drawableResource = when (randomInt) {
-            1 -> R.drawable.dice_1
-            2 -> R.drawable.dice_2
-            3 -> R.drawable.dice_3
-            4 -> R.drawable.dice_4
-            5 -> R.drawable.dice_5
-            else -> R.drawable.dice_6
+        val lista: List<Int> = listOf(1, 2, 3, 4, 5, 6)
+     val numero= lista.shuffled().last()
+
+        var image=0;
+        num=num+1;if(num==7){num=num-6}
+         when (numero) {
+
+            1 -> image=R.drawable.dice_1
+            2 -> image=R.drawable.dice_2
+            3 -> image=R.drawable.dice_3
+            4 -> image=R.drawable.dice_4
+            5 -> image=R.drawable.dice_5
+            else -> image=R.drawable.d
         }
 
-        diceImage.setImageResource(drawableResource)
+        diceImage.setImageResource(image)
     }
 }
