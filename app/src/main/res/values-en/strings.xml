@@ -3,4 +3,6 @@
     <string name="roll">Roll</string>
     <string name="tirar">Rolling</string>
     <string name="otro">Other</string>
-</resources>
+    </resources>
+    <!--Para añadir un idioma a la aplicación primero hay que crear un fichero string.xml
+    en el que incluiremos la etiqueta resources, y dentro de ella una etiqueta por cada texto a traducir-->
