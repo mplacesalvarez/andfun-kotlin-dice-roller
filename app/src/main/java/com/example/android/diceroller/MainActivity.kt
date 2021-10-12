@@ -39,6 +39,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun rollDice() {
+        /* Para realizar la labor de la función random() cree una lista con
+        números del uno al seis, utilicé shuffled() para ordenar de forma aleatoria
+        la lista y last() para que tomara el último número de la lista */
         val lista: List<Int> = listOf(1, 2, 3, 4, 5, 6)
      val numero= lista.shuffled().last()
 
