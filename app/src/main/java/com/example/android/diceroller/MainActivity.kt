@@ -53,6 +53,9 @@ class MainActivity : AppCompatActivity() {
             5 -> image=R.drawable.dice_5
             else -> image=R.drawable.d
         }
+/*Para cambiar una imagen metemos la imagen que queramos en el directorio drawable
+y en el fichero MainActivity.kt ponemos su ruta
+ */
 
         diceImage.setImageResource(image)
     }
