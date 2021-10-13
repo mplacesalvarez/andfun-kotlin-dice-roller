@@ -39,6 +39,12 @@
         android:text="@string/roll"
         app:icon="@drawable/baseline_fingerprint_24"
         />
+    <!-- Para añadir un icono al botón deberemos cambiar su estilo por un Material buttons,
+para hacerlo primero hay que implementar la libreria de Material Components en dependencies
+del build.gradle y luego elegir un style del Material. Ahora meteremos en la carpeta drawable
+el icono que queremos insertar en el botón y dentro del activity_main.xml app:icon la ruta
+del icono -->
+
     <!--Si queremos cambiar el idioma de nuestra app tendremos que añadir al fichero activity_main.xml
     los strings.xml, añadiendo en android:text su ruta-->
 
